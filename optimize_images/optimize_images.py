@@ -18,7 +18,7 @@ logger = logging.getLogger(__name__)
 
 # A list of file types with their respective commands
 COMMANDS = [
-    ('.jpg', 'jpegtran -copy none -optimize "{filename}" "{filename}"'),
+    ('.jpg', 'jpegtran -copy none -optimize -output "{filename}" "{filename}"'),
     ('.png', 'optipng "{filename}"'),
 ]
 
